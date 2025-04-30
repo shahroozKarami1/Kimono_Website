@@ -1,0 +1,68 @@
+import { Box, Grid, IconButton, List } from '@mui/material'
+import React from 'react'
+import CusContainer from '../Container/CusContainer'
+import { NavBarContainer } from '@/Elements/ElementsCustom'
+import NavBarLinks from './NavBarLinks'
+import SearchIcon from '@mui/icons-material/Search';
+import MenuIcon from '@mui/icons-material/Menu';
+const NavBar = () => {
+    return (
+        <NavBarContainer>
+            <CusContainer>
+                <Grid container justifyContent={"center"} alignItems={"center"}>
+                    <Grid size={{ md: 2 }}>
+                        <Box sx={{
+                            width: '60%',
+                            height: '100%',
+
+                        }}>
+                            <img src="/images/LandingPage/Logo.svg" alt="logo" style={{
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'contain',
+                                objectPosition: 'center',
+                                display: 'block',
+                            }} />
+                        </Box>
+                    </Grid>
+                    <Grid size={{ md: 8 }}>
+                        <List sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center'
+                        }}>
+                            <NavBarLinks subLinks={[{ link: "/", title: "تست یک" }]} link="/" title="صفحه اصلی" />
+                            <NavBarLinks subLinks={[{ link: "/", title: "تست یک" }]} link="/" title="گالری" />
+                            <NavBarLinks subLinks={[{ link: "/", title: "تست یک" }]} link="/" title="درباره ما" />
+                            <NavBarLinks subLinks={[{ link: "/", title: "تست یک" }]} link="/" title="صفحات" />
+                            <NavBarLinks subLinks={[{ link: "/", title: "تست یک" }]} link="/" title="تماس" />
+                            <NavBarLinks subLinks={[{ link: "/", title: "تست یک" }]} link="/" title="وبلاگ" />
+                        </List>
+                    </Grid>
+                    <Grid size={{ md: 2 }}>
+                        <Box sx={{
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'flex-end',
+                            gap: '10px',
+                        }}>
+                            <IconButton>
+                                <SearchIcon  sx={{
+                                    fontSize : "2rem"
+                                }}/>
+                            </IconButton>
+                            |
+                            <IconButton>
+                                <MenuIcon sx={{
+                                    fontSize : "2rem"
+                                }} />
+                            </IconButton>
+                        </Box>
+                    </Grid>
+                </Grid>
+            </CusContainer>
+        </NavBarContainer>
+    )
+}
+
+export default NavBar

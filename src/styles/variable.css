@@ -1,0 +1,7 @@
+@import url(../styles/fonts.css);
+:root {
+  --dark-color: #151515;
+  --white-color: #ffffff;
+  --red-color: #b90808;
+  --primary-font: Pinar;
+}

@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@import url(../styles/reset.css);
+@import url(../styles/variable.css);
+body,
+* {
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: var(--primary-font) !important;
+  color: var(--white-color);
+}
+body {
+  overflow: hidden;
+  background-color: var(--dark-color);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dark-color);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--red-color);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--white-color);
+}
+.button-89 {
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: var(--white-color);
+  padding: calc(0.5em + var(--s)) calc(0.9em + var(--s)) !important;
+  color: var(--white-color) !important;
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p)) !important;
+  transition: 0.3s linear, color 0s, background-color 0s !important;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  font-size: 16px;
+  width: 50%;
+  border: 0;
+  margin-top: 2rem !important;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--white-color);
+  outline-offset: 0.05em;
+}
+
+.button-89:active {
+  background: var(--white-color) !important;
+  color: var(--white-color) !important;
+}
