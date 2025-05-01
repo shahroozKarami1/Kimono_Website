@@ -16,6 +16,10 @@ const Landing = () => {
             <Grid container alignItems={"center"} justifyContent={"center"}>
                 <Grid size={{ md: 1 }}>
                     <Box sx={{
+                        display: {
+                            xs: "none",
+                            md: "block"
+                        },
                         transform: "rotate(90deg)",
                         mb: "5rem"
                     }}>
@@ -24,21 +28,28 @@ const Landing = () => {
                         </Typography>
                     </Box>
                 </Grid>
-                <Grid size={{ md: 10 }}>
+                <Grid size={{ md: 10  ,  xs :  12 }}>
                     <LandingSlider SliderData={[{
                         image: "/images/LandingPage/ImgSlider/img1.jpg", topic: "نمونه  کار مد", title: "برترین مد رنگ مو های  برند کیمونو"
                     }, {
-                        image: "/images/LandingPage/ImgSlider/img1.jpg", topic: "1نمونه  کار مد", title: "برترین مد رنگ مو های  برند کیمونو"
+                        image: "/images/LandingPage/ImgSlider/img2.jpg", topic: "1نمونه  کار مد", title: "برترین مد رنگ مو های  برند کیمونو"
                     }, {
-                        image: "/images/LandingPage/ImgSlider/img1.jpg", topic: "2نمونه  کار مد", title: "برترین مد رنگ مو های  برند کیمونو"
+                        image: "/images/LandingPage/ImgSlider/img3.jpg", topic: "2نمونه  کار مد", title: "برترین مد رنگ مو های  برند کیمونو"
                     }]} />
                 </Grid>
-                <Grid size={{ md: 1 }}>
+                <Grid size={{ md: 1 ,  xs :  12 }}>
                     <Box sx={{
-                        display: "flex",
+                        mt: {
+                            xs: "1rem",
+                            md: "0"
+                        },
+                        display: 'flex',
                         justifyContent: "center",
                         alignItems: "center",
-                        flexDirection: "column",
+                        flexDirection: {
+                            md: "column",
+                            xs: "row"
+                        },
                         gap: 1.3
                     }}>
                         <SosialMediaIcons icon={<FacebookIcon />} />

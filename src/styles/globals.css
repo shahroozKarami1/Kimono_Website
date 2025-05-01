@@ -12,6 +12,19 @@ body,
 body {
   overflow: hidden;
   background-color: var(--dark-color);
+  position: relative  ; 
+
+}
+body::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  z-index: 50;
+  border-radius: 0.5rem;
+  height: 100vh;
+  background-color: var(--red-color);
 }
 ::-webkit-scrollbar {
   width: 10px;

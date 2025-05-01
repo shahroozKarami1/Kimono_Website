@@ -32,15 +32,18 @@ export const CardSliderOverlay: FC<{ topic: string, title: string }> = ({ topic,
 const CardSlider: FC<CardSliderProps> = ({ image, topic, title }) => {
     return (
         <Box sx={{
-            width: "100%",
-            height: "500px",
+            width: {
+                md: "100%",
+                xs: "75%"
+            },
+            height: "550px",
             position: "relative"
         }}>
             <img src={image} alt="" style={{
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
-                objectPosition: "top",
+                objectPosition: "center",
                 borderRadius: "2rem"
             }} />
             <CardSliderOverlay topic={topic} title={title} />

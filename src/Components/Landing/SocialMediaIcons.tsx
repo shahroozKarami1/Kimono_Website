@@ -7,11 +7,17 @@ const SosialMediaIcons:FC<SosialMediaIconsProps> = ({icon }) => {
     <Box sx={{
       backgroundColor : "#3C3C3C" ,  
       borderRadius : '50%' ,
+      "&:hover":{
+        transition : "all 0.3s ease-in-out" , 
+        transform : "scale(1.2)" , 
+
+      }
     }}>
       <IconButton  sx={{
         "& svg": {
-          fontSize: "1.3rem"
+          fontSize: "1.1rem" , 
         }
+        
       }}>
         {icon}
       </IconButton>

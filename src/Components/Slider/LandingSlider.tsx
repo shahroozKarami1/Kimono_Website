@@ -1,21 +1,28 @@
 "use client"
 import React, { FC } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import {  Pagination, Autoplay, EffectFade } from 'swiper/modules';
-import { EffectCoverflow } from 'swiper/modules';
+import { Pagination, Autoplay, EffectCreative } from 'swiper/modules';
 import CardSlider from '../Landing/CardSlider';
 import { SliderProps } from '@/Types/Interfaces';
 
 const LandingSlider: FC<SliderProps> = ({ SliderData }) => {
     return (
         <Swiper
+            effect={'creative'}
             grabCursor={true}
             centeredSlides={true}
             slidesPerView="auto"
-            modules={[EffectFade, Autoplay, Pagination]}
-            effect="fade"
-            fadeEffect={{ crossFade: true }}
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            creativeEffect={{
+                prev: {
+                    shadow: true,
+                    translate: ['-20%', 0, -1],
+                },
+                next: {
+                    translate: ['100%', 0, 0],
+                },
+            }}
+            modules={[Autoplay, Pagination, EffectCreative]}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
             loop={true}
         >

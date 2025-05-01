@@ -9,10 +9,16 @@ const NavBar = () => {
     return (
         <NavBarContainer>
             <CusContainer>
-                <Grid container justifyContent={"center"} alignItems={"center"}>
+                <Grid container justifyContent={{
+                    md: "center",
+                    xs: "space-between"
+                }} alignItems={"center"}>
                     <Grid size={{ md: 2 }}>
                         <Box sx={{
-                            width: '60%',
+                            width:  {
+                                xs: "100%",
+                                md: "60%"
+                            },
                             height: '100%',
 
                         }}>
@@ -27,7 +33,10 @@ const NavBar = () => {
                     </Grid>
                     <Grid size={{ md: 8 }}>
                         <List sx={{
-                            display: 'flex',
+                            display: {
+                                xs: "none",
+                                md: "flex"
+                            },
                             alignItems: 'center',
                             justifyContent: 'center'
                         }}>
@@ -47,14 +56,14 @@ const NavBar = () => {
                             gap: '10px',
                         }}>
                             <IconButton>
-                                <SearchIcon  sx={{
-                                    fontSize : "2rem"
-                                }}/>
+                                <SearchIcon sx={{
+                                    fontSize: "2rem"
+                                }} />
                             </IconButton>
                             |
                             <IconButton>
                                 <MenuIcon sx={{
-                                    fontSize : "2rem"
+                                    fontSize: "2rem"
                                 }} />
                             </IconButton>
                         </Box>
