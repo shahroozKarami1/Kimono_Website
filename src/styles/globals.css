@@ -12,10 +12,9 @@ body,
 body {
   overflow: hidden;
   background-color: var(--dark-color);
-  position: relative  ; 
-
+  position: relative;
 }
-body::before{
+body::before {
   content: "";
   position: absolute;
   top: 0;
@@ -74,4 +73,8 @@ body::before{
 .button-89:active {
   background: var(--white-color) !important;
   color: var(--white-color) !important;
+}
+
+.landing__nav-link:hover .landing__sub-list {
+  display: flex !important;
 }

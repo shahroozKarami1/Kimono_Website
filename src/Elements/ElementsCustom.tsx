@@ -1,5 +1,5 @@
 "use client"
-import { Box, ListItem, styled } from "@mui/material";
+import { Box, List, ListItem, styled } from "@mui/material";
 
 export let LandingContainer = styled(Box)({
     width: '100%',
@@ -21,6 +21,7 @@ export let CusNavLink = styled(ListItem)({
     fontWeight: 'bold',
     width: "120px",
     display: 'flex',
+    position: 'relative',
     alignItems: 'center',
     justifyContent: 'center',
     listStyle: 'none',
@@ -31,10 +32,25 @@ export let CardSliderOverlayWrapper = styled(Box)({
     position: "absolute",
     bottom: "10%",
     right: "5%",
-    backgroundColor : 'transparent' ,  
+    backgroundColor: 'transparent',
     display: "flex",
     flexDirection: "column",
     color: "white",
+
+})
+
+export let SubListNavBar = styled(List)({
+
+    flexDirection : 'column' ,  
+    backgroundColor: '#000',
+    position: 'absolute',
+    right: '0',
+    top : 40 ,  
+    width: '250px',
+    zIndex :  999, 
+    borderRadius : '10px' , 
+    padding : '  0.5rem' , 
+
 
 })
 

@@ -1,5 +1,5 @@
 import { LandingContainer } from '@/Elements/ElementsCustom'
-import { Box, Grid, Slider, Typography } from '@mui/material'
+import { Box, Grid, Typography } from '@mui/material'
 import React from 'react'
 import SosialMediaIcons from './SocialMediaIcons'
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -8,7 +8,6 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import PinterestIcon from '@mui/icons-material/Pinterest';
-import CardSlider from './CardSlider';
 import LandingSlider from '../Slider/LandingSlider';
 const Landing = () => {
     return (

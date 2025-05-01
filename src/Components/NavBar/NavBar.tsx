@@ -15,7 +15,7 @@ const NavBar = () => {
                 }} alignItems={"center"}>
                     <Grid size={{ md: 2 }}>
                         <Box sx={{
-                            width:  {
+                            width: {
                                 xs: "100%",
                                 md: "60%"
                             },
@@ -40,12 +40,27 @@ const NavBar = () => {
                             alignItems: 'center',
                             justifyContent: 'center'
                         }}>
-                            <NavBarLinks subLinks={[{ link: "/", title: "تست یک" }]} link="/" title="صفحه اصلی" />
-                            <NavBarLinks subLinks={[{ link: "/", title: "تست یک" }]} link="/" title="گالری" />
-                            <NavBarLinks subLinks={[{ link: "/", title: "تست یک" }]} link="/" title="درباره ما" />
-                            <NavBarLinks subLinks={[{ link: "/", title: "تست یک" }]} link="/" title="صفحات" />
-                            <NavBarLinks subLinks={[{ link: "/", title: "تست یک" }]} link="/" title="تماس" />
-                            <NavBarLinks subLinks={[{ link: "/", title: "تست یک" }]} link="/" title="وبلاگ" />
+                            <NavBarLinks subLinks={[
+                                { link: "/", title: "کلاسیک", },
+                                { link: "/", title: "مدرن", },
+                                { link: "/", title: "سنتی ایرانی", },
+                                { link: "/", title: "هنری", }
+
+                            ]} link="/" title="صفحه اصلی" />
+
+
+
+                            <NavBarLinks subLinks={[
+                                { link: "/", title: "کلاسیک", },
+                                { link: "/", title: "مدرن", },
+                                { link: "/", title: "سنتی ایرانی", },
+                                { link: "/", title: "هنری", }
+
+                            ]} link="/" title="گالری" />
+                            <NavBarLinks link="/" title="درباره ما" />
+                            <NavBarLinks link="/" title="صفحات" />
+                            <NavBarLinks link="/" title="تماس" />
+                            <NavBarLinks link="/" title="وبلاگ" />
                         </List>
                     </Grid>
                     <Grid size={{ md: 2 }}>
