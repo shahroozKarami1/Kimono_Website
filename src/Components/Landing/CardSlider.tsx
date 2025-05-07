@@ -3,24 +3,31 @@ import { CardSliderProps } from '@/Types/Interfaces'
 import { Box, Button, IconButton, Typography } from '@mui/material'
 import React, { FC } from 'react'
 import FilterCenterFocusIcon from '@mui/icons-material/FilterCenterFocus';
+import AOSAnimation from '@/app/AOSAnimation/AOSAnimation';
 
 export const CardSliderOverlay: FC<{ topic: string, title: string }> = ({ topic, title }) => {
     return (
         <CardSliderOverlayWrapper >
-            <Typography variant="h6" sx={{
-                fontSize: "1.2rem",
-                fontWeight: "light",
-            }}>
-                {topic}
-            </Typography>
-            <Typography variant="h6" sx={{
-                fontSize: "2rem",
-                fontWeight: "900",
-            }}>
-                {title}
+            <AOSAnimation TypoAos="fade-up" delay={200}>
+
+                <Typography variant="h6" sx={{
+                    fontSize: "1.2rem",
+                    fontWeight: "light",
+                }}>
+                    {topic}
+                </Typography>
+            </AOSAnimation>
+            <AOSAnimation TypoAos="fade-up" delay={400}>
+
+                <Typography variant="h6" sx={{
+                    fontSize: "2rem",
+                    fontWeight: "900",
+                }}>
+                    {title}
 
 
-            </Typography>
+                </Typography>
+            </AOSAnimation>
             <Box>
                 <Button className="button-89">
                     مشاهده  کنید

@@ -78,3 +78,43 @@ body::before {
 .landing__nav-link:hover .landing__sub-list {
   display: flex !important;
 }
+::selection {
+  background-color: var(--red-color);
+}
+
+.MuiTextField-root {
+  width: 100%;
+}
+
+.MuiTextField-root .MuiOutlinedInput-root {
+  border-radius: 0;
+}
+
+.MuiTextField-root .MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+.MuiTextField-root .MuiInputBase-input {
+  padding: 12px;
+  font-family: var(--primary-font);
+}
+
+.MuiTextField-root .MuiInputLabel-root {
+  font-family: var(--primary-font);
+}
+
+.MuiTextField-root .MuiInputBase-root:hover .MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+
+.MuiTextField-root .MuiInputBase-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: none;
+  box-shadow: none;
+}
+.search-input {
+  color: var(--white-color) !important;
+  
+}
+.search-input::placeholder {
+  color: var(--white-color) !important;
+}

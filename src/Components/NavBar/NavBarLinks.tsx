@@ -3,7 +3,7 @@ import React, { FC } from 'react'
 import Link from 'next/link'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { CusNavLink, SubListNavBar } from '@/Elements/ElementsCustom'
-import { List, ListItem } from '@mui/material';
+import {  ListItem } from '@mui/material';
 const NavBarLinks: FC<NavBarLinksProps> = ({ link, title, subLinks }) => {
     return (
         <>
@@ -22,8 +22,8 @@ const NavBarLinks: FC<NavBarLinksProps> = ({ link, title, subLinks }) => {
 
                 }}>
                     {
-                        subLinks && subLinks.map(({ link, title }) => (
-                            <ListItem sx={{
+                        subLinks && subLinks.map(({ link, title }, index) => (
+                            <ListItem key={index}  sx={{
                                 padding: "1rem  "
                             }}>
                                 <Link href={link}>

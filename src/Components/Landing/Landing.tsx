@@ -60,7 +60,6 @@ const Landing = () => {
                     </Box>
                 </Grid>
             </Grid>
-
         </LandingContainer>
     )
 }

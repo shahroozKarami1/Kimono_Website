@@ -5,7 +5,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination'; 
 import 'swiper/css/effect-cards';
 import 'swiper/css/effect-fade';
-
+import "aos/dist/aos.css";
+import 'animate.css';
 import LayOut from "@/Components/Layout/LayOut";
 
 export const metadata: Metadata = {
