@@ -14,7 +14,7 @@ interface RightSideInfoProps {
 const RightSideInfo: FC<RightSideInfoProps> = ({ open, handleClose }) => {
     return (
         <RightSideInfoContainer
-            className={open ? ' animate__animated  animate__backInLeft' : ' animate__animated  animate__backOutLeft'}
+            // className={open ? ' animate__animated  animate__backInLeft' : ' animate__animated  animate__backOutLeft'}
             sx={{
                 transform: open ? 'translateX(0)' : 'translateX(-100%)'
             }} >

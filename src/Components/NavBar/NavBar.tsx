@@ -1,6 +1,6 @@
 "use client"
 import { Box, Grid, IconButton, List } from '@mui/material'
-import React, { useCallback, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import CusContainer from '../Container/CusContainer'
 import { CusTextFieldSearching, NavBarContainer } from '@/Elements/ElementsCustom'
 import NavBarLinks from './NavBarLinks'
@@ -14,10 +14,11 @@ const NavBar = () => {
     const handleCloseSearchBar = useCallback(() => {
         setIsOpenSearchBar(false);
     }, []);
-    
+
     const handleCloseLeftSideInfo = useCallback(() => {
         setIsOpenLeftSideinfo(false);
     }, []);
+
     return (
         <>
             <NavBarContainer>

@@ -1,11 +1,13 @@
+import Introduce from '@/Components/CompsAboutUs/Introduce/Introduce'
+import { Box } from '@mui/material'
 import React from 'react'
 
-const page = () => {
+const AboutUs = () => {
     return (
-        <div>
-            LIOVE JS  FOR ALL THE TIME :)
-        </div>
+        <Box>
+            <Introduce />
+        </Box>
     )
 }
 
-export default page
+export default AboutUs

@@ -1,6 +1,6 @@
 "use client"
 import { Box, List, ListItem, styled, TextField } from "@mui/material";
-
+import bgAbout from '../../public/images/AboutUsPage/Introduce/BackGround.jpg'
 export let LandingContainer = styled(Box)({
     width: '100%',
     height: '100vh',
@@ -107,4 +107,14 @@ export let ContainerRightSideInfoList = styled(List)({
     width: '100%',
     flexDirection: 'column',
     justifyContent: 'flex-start',
+})
+
+export let IntroduceWrapper = styled(Box)({
+    width: '100%',
+    height : '100%' ,  
+    backgroundColor: "var(--dark-color)",
+    backgroundImage : `url(${bgAbout.src})`,
+    backgroundSize : 'cover',
+    backgroundPosition : 'center',
+    backgroundRepeat : 'no-repeat',
 })

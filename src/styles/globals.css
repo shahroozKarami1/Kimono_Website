@@ -107,14 +107,21 @@ body::before {
   border: none;
 }
 
-.MuiTextField-root .MuiInputBase-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+.MuiTextField-root
+  .MuiInputBase-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
   border: none;
   box-shadow: none;
 }
 .search-input {
   color: var(--white-color) !important;
-  
 }
 .search-input::placeholder {
   color: var(--white-color) !important;
+}
+
+.test_class {
+  -webkit-text-stroke-width: 1px;
+  font-style: normal;
+  letter-spacing: 1.5px;
 }
