@@ -10,7 +10,7 @@ body,
   color: var(--white-color);
 }
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: var(--dark-color);
   position: relative;
 }

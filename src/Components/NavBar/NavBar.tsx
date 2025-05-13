@@ -122,7 +122,7 @@ const NavBar = () => {
 
                 </Box>
             </ModalContainer>
-            <RightSideInfo open={isOpenLeftSideinfo} handleClose={handleCloseLeftSideInfo} />
+            {/* <RightSideInfo open={isOpenLeftSideinfo} handleClose={handleCloseLeftSideInfo} /> */}
 
         </>
 

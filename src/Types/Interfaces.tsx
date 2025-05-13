@@ -15,3 +15,12 @@ export interface CardSliderProps {
 export interface SliderProps {
     SliderData: CardSliderProps[];
 }
+
+export interface CommentCardProps {
+    rateValue: number;
+    commentText: string;
+    name: string,
+    location: string,
+    profile: string,
+    id: string
+}

@@ -11,7 +11,7 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 import LandingSlider from '../Slider/LandingSlider';
 const Landing = () => {
     return (
-        <LandingContainer>
+        <LandingContainer className='landing__container'>
             <Grid container alignItems={"center"} justifyContent={"center"}>
                 <Grid size={{ md: 1 }}>
                     <Box sx={{

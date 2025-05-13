@@ -1,9 +1,10 @@
 "use client"
 import { Box, List, ListItem, styled, TextField } from "@mui/material";
 import bgAbout from '../../public/images/AboutUsPage/Introduce/BackGround.jpg'
+import bgComments from '../../public/images/AboutUsPage/Comments/WrapperImage.jpg'
 export let LandingContainer = styled(Box)({
     width: '100%',
-    height: '100vh',
+    height: '100%',
     backgroundColor: "var(--dark-color)",
     position: 'relative',
 })
@@ -117,4 +118,25 @@ export let IntroduceWrapper = styled(Box)({
     backgroundSize : 'cover',
     backgroundPosition : 'center',
     backgroundRepeat : 'no-repeat',
+    
+})
+export let CommentsSectionWrapper = styled(Box)({
+    width: '100%',
+    height: '600px',
+    overflowY : 'scroll',
+    display : 'flex',
+    alignItems : 'center',
+    justifyContent : 'center',
+    backgroundColor: "var(--dark-color)",
+    backgroundImage : `url(${bgComments.src})`,
+    backgroundSize : 'cover',
+    backgroundPosition : 'center',
+    backgroundRepeat : 'no-repeat',
+})
+export let CommentCardWrapper = styled(Box)({
+    width: '100%',
+    padding : '2.3rem 3rem ',
+    backgroundColor: "var(--red-color)",
+    borderRadius : '0.25rem',
+    overflow : 'hidden',
 })
